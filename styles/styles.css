@@ -46,3 +46,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*		Estilos PROPIOS		*/
+
+.logoName {
+
+	font-size: 100px;
+	font-family: fantasy;
+	background-color: #66CCFF;
+	padding: 10px,10px,20px,20px;
+	text-align: center;
+
+}
+
+body{
+
+	background-color: #66CCFF;
+
+}
+
+li {
+
+	padding: 10px;
+	padding-left: 500px;
+
+}
+
+.foot {
+
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #66CCFF;	
+
+}
