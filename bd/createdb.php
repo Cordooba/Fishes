@@ -2,7 +2,7 @@
 
 require_once(dirname(dirname(__FILE__)).'/app/info.php');
 
-require_once(__ROOT__.'/db/connectiondb.php'); 
+require_once(__ROOT__.'/bd/connectiondb.php'); 
 
 try{	
 
@@ -10,8 +10,9 @@ try{
 		id 					INT AUTO_INCREMENT PRIMARY KEY,
 		fish 				VARCHAR(50) NOT NULL,
 		type   				ENUM('Agua dulce','Agua fria','Agua salada') NOT NULL,
-		feed 				ENUM('Carnivoros','Omnivoros','Herbivoros','Limnivoros') NOT NULL,
+		feed 				SET('Carnivoros','Omnivoros','Herbivoros','Limnivoros') NOT NULL,
 		characteristics 	VARCHAR(100),
+		locality			VARCHAR(40),
 		createntry			TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 		donentry 			TIMESTAMP NULL DEFAULT NULL,
 		deletentry 			TIMESTAMP NULL DEFAULT NULL

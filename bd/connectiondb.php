@@ -4,7 +4,7 @@ require_once(__ROOT__.'/app/datadb.php');
 
 try{
 
-	$pdo = new PDO('mysql:host='.$host.';dbname='.$db, $usser, $pass);
+	$pdo = new PDO('mysql:host='.$host.';dbname='.$db, $usser, $pswd);
 
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
