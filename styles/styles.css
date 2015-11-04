@@ -59,6 +59,27 @@ table {
 
 }
 
+h3 {
+
+	font-size: 50px;
+	font-family: fantasy;
+
+}
+
+.deletedInfo {
+
+	font-family: fantasy;
+	padding-left: 300px;
+	margin-top: 10px;
+
+}
+
+.back{
+
+	margin: 3px;
+
+}
+
 body{
 
 	background-color: #66CCFF;
@@ -69,6 +90,38 @@ li {
 
 	padding: 10px;
 	padding-left: 500px;
+
+}
+
+label{
+
+	font-size: 20px;
+	font-family: fantasy;
+	padding-left: 350px;
+
+}
+
+input {
+	
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-bottom: 10px;
+
+}
+
+.btnAdd {
+
+	padding-left: 500px;
+
+}
+
+.selector {
+
+	padding-left: 380px;
+	font-family: fantasy;
+	width: 75%;
 
 }
 
