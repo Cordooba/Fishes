@@ -2,19 +2,19 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Eliminar...</title>
+	<title>Consultar...</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
 	<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-	<div class="container">
+		<div class="container">
 	<header>
 		<h1><a class="btn btn-info back" href="<?=$base_url?>" role="button">Inicio <i class="glyphicon glyphicon-home"></i></a></h1>
 		<h2 class="logoName">Eliminar...</h1>
 	</header>
 	<hr>
 	<section>
-			<?php if ( !empty($listOfFishDelete) ) :?>
+			<?php if ( !empty($listOfFishDeletes) ) :?>
 				<table class="table table-striped">
 					<thead>
 						<tr>
@@ -24,11 +24,11 @@
 							<th><strong>Familia</strong></th>
 							<th><strong>Características</strong></th>
 							<th><strong>Ubicación</strong></th>
-							<th><strong>Eliminar</strong></th>
+							<th><strong>Registrar</strong></th>
 						</tr>
 					</thead>
 					<tbody>
-			<?php foreach($listOfFishDelete as $listFishesD): 
+			<?php foreach($listOfFishDeletes as $listFishesD): 
 				switch ($listFishesD['type']) {
 								case 'Agua dulce':
 									$colorType = 'class="info"';
@@ -52,9 +52,9 @@
 							<th><?=$listFishesD['characteristics']?></th>
 							<th><?=$listFishesD['locality']?></th>
 							<th class="listicon">
-								<form action="?deleteFish" method="post">
+								<form action="?updateFish" method="post">
 									<input type="hidden" name="idFish" value="<?=$listFishesD['id']?>">
-									<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-remove-circle"></i></button>
+									<button type="submit" class="btn btn-link btn-sm listiconbutton"><i class="glyphicon glyphicon-upload"></i></button>
 								</form>
 							</th>
 			<?php endforeach ; ?>
@@ -67,7 +67,7 @@
 	<footer>
 		<div class="foot">
 			<p>&copy; 2015 <a href="">Alejandro Córdoba Muñoz</a></p>
-			<p>Para eliminar...</p>
+			<p>Para volver a registrar...</p>
 		</div>
 	</footer>
 	</div>

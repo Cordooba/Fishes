@@ -54,7 +54,7 @@ table {
 	font-size: 100px;
 	font-family: fantasy;
 	background-color: #66CCFF;
-	padding: 10px,10px,20px,20px;
+	padding-left: 120px;
 	text-align: center;
 
 }
@@ -63,6 +63,13 @@ h3 {
 
 	font-size: 50px;
 	font-family: fantasy;
+
+}
+
+body {
+
+	background-image: url('.././assets/main.jpg');
+
 
 }
 
@@ -93,21 +100,42 @@ li {
 
 }
 
+.btnTD{
+
+	margin:2px;
+	font-size: 20px;
+
+}
+
+.btnA{
+
+	width: 40%;
+
+}
+
+.btnD{
+
+	width: 40%;
+
+}
+
+.btnL{
+
+	width: 40%;
+
+}
+
 label{
 
 	font-size: 20px;
 	font-family: fantasy;
-	padding-left: 350px;
+
 
 }
 
 input {
 	
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-right: 50px;
-	padding-left: 50px;
-	margin-bottom: 10px;
+	font-family: fantasy;
 
 }
 
@@ -117,11 +145,28 @@ input {
 
 }
 
+textarea {
+
+
+}
+
 .selector {
 
-	padding-left: 380px;
 	font-family: fantasy;
-	width: 75%;
+
+}
+
+tr{
+
+	font-family: fantasy;
+	font-size: 14px;
+
+}
+
+p{
+
+	font-family: fantasy;
+	font-size: 20px;
 
 }
 
