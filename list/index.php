@@ -3,6 +3,8 @@
 	require_once(dirname(dirname(__FILE__)).'/app/info.php');
 	require_once(dirname(dirname(__FILE__)).'/bd/connectiondb.php');
 
+	//Botonera
+
 	if ( isset($_GET['alphaFish'])) {
 
 		$sql = 'SELECT * FROM fishes WHERE deletentry IS NULL ORDER BY fish ASC';
@@ -10,6 +12,18 @@
 	}else if ( isset( $_GET['desalphaFish']) ) {
 
 		$sql = 'SELECT * FROM fishes WHERE deletentry IS NULL ORDER BY fish DESC';
+
+	}else if ( isset( $_GET['fishTypeSalada']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE type="Agua Salada" AND deletentry IS NULL';
+
+	}else if ( isset( $_GET['fishTypeDulce']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE type="Agua Dulce" AND deletentry IS NULL';
+
+	}else if ( isset( $_GET['fishTypeFria']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE type="Agua Fria" AND deletentry IS NULL';
 
 	}else {
 		
