@@ -5,49 +5,20 @@
 
 	if ( isset($_GET['alphaFish'])) {
 
-		try {
-
-			$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY fish ASC';
-
-			$ps = $pdo->prepare($sql);
-
-			$ps->execute();
-
-			} catch (PDOException $e) {
-
-			echo "Error";
-			exit();
-
-		}
-	
-	header('Location: .');
-	exit();
+		$sql = 'SELECT * FROM fishes WHERE deletentry IS NULL ORDER BY fish ASC';
 
 	}else if ( isset( $_GET['desalphaFish']) ) {
 
-		try {
-
-			$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY fish DESC';
-
-			$ps = $pdo->prepare($sql);
-
-			$ps->execute();
-
-			} catch (PDOException $e) {
-
-			echo "Error";
-			exit();
-
-		}
-	
-	header('Location: .');
-	exit();
+		$sql = 'SELECT * FROM fishes WHERE deletentry IS NULL ORDER BY fish DESC';
 
 	}else {
+		
+		$sql = 'SELECT * FROM fishes WHERE deletentry IS NULL ORDER BY deletentry';
+
+	}	
 
 	try {
 		
-		$sql = 'SELECT * FROM fishes WHERE deletentry IS NULL ORDER BY deletentry';
 
 		$ps = $pdo->prepare($sql);
 
@@ -63,8 +34,6 @@
 	while ($row = $ps -> fetch(PDO::FETCH_ASSOC) ) {
 
 	$listOfFish [] = $row;
-
-	}
 
 	}
 
