@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Eliminar...</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -64,12 +65,6 @@
 				<p class="deletedInfo">Cuando ingreses alguna especie de peces aparecerán en esta lista...</p>
 			<?php endif; ?>
 	</section>
-	<footer>
-		<div class="foot">
-			<p>&copy; 2015 <a href="">Alejandro Córdoba Muñoz</a></p>
-			<p>Para eliminar...</p>
-		</div>
-	</footer>
 	</div>
 </body>
 </html>

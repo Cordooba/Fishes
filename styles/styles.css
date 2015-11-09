@@ -53,127 +53,108 @@ table {
 
 	font-size: 100px;
 	font-family: fantasy;
-	background-color: #66CCFF;
+	color: #66CCFF;
 	padding-left: 120px;
 	text-align: center;
-
-}
-
-h3 {
-
-	font-size: 50px;
-	font-family: fantasy;
 
 }
 
 body {
 
 	background-image: url('.././assets/main.jpg');
-
+	font-family: 'Shadows Into Light', cursive;;
 
 }
 
-.deletedInfo {
+.home{
 
-	font-family: fantasy;
-	padding-left: 300px;
-	margin-top: 10px;
+	text-align: center;
 
 }
 
 .back{
 
 	margin: 3px;
+	font-size: 22px;
 
 }
 
-body{
+input {
 
-	background-color: #66CCFF;
+	font-family: 'Romanesco', cursive;
+
+}
+
+select {
+
+	font-family: 'Romanesco', cursive;
+
+}
+
+label {
+
+	font-family: 'Romanesco', cursive;
 
 }
 
 li {
 
 	padding: 10px;
-	padding-left: 500px;
+	padding-left: 80px;
 
 }
 
-.btnTD{
+tr {
 
-	margin:2px;
-	font-size: 20px;
-
-}
-
-.btnA{
-
-	width: 40%;
+	font-family: 'Romanesco', cursive;
 
 }
 
-.btnD{
-
-	width: 40%;
-
-}
-
-.btnL{
-
-	width: 40%;
-
-}
-
-label{
-
-	font-size: 20px;
-	font-family: fantasy;
-
-
-}
-
-input {
+h3 {
 	
-	font-family: fantasy;
+	font-weight: bolder;
+	font-size: 30px;
+	font-family: 'Romanesco', cursive;
 
 }
 
-.btnAdd {
+p {
 
-	padding-left: 500px;
-
-}
-
-textarea {
-
+	font-family: 'Romanesco', cursive;
+	padding-left: 30px;
 
 }
 
-.selector {
+.btnFishDeletes {
 
-	font-family: fantasy;
-
-}
-
-tr{
-
-	font-family: fantasy;
-	font-size: 14px;
+	font-size: 18px;
+	font-family: 'Romanesco', cursive;
+	margin-top: 5px;
+	margin-bottom: 5px;
 
 }
 
-p{
+.btn1 {
 
-	font-family: fantasy;
-	font-size: 20px;
+	font-size: 18px;
+	font-family: 'Romanesco', cursive;
+	margin-left: 3px;
 
+}
+
+.btn2 {
+
+	font-size: 18px;
+	font-family: 'Romanesco', cursive;
+	margin: 3px;
+	
 }
 
 .foot {
 
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: #66CCFF;	
+	color: #66CCFF;
+	font-family: 'Romanesco', cursive;	
 
 }

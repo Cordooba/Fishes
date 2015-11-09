@@ -53,7 +53,7 @@
 	header('Location: .');
 	exit();
 
-	} 
+	}
 
 	require_once 'deletes.html.php';
 

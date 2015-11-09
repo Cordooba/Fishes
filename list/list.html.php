@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Consultar...</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -13,6 +14,30 @@
 		<h2 class="logoName">Consultar...</h1>
 	</header>
 	<hr>
+	<?php if( !empty($listOfFish) && count($listOfFish)>1 ): ?>
+		<table>
+			<tbody>
+				<div class="btn-group" role="group" aria-label="order">
+				<tr>
+					<td>
+						<form action="?alphaFish" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-primary btn1">
+								<span class="glyphicon glyphicon-sort-by-alphabet"></span>
+							</button>
+						</form>
+					</td>
+					<td>
+						<form action="?desalphaFish" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-danger btn2">
+								<span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
+							</button>
+						</form>
+					</td>
+				</tr>
+				</div>
+			</tbody>
+		</table>
+	<?php endif; ?>
 	<section>
 			<?php if ( !empty($listOfFish) ) :?>
 				<table class="table table-striped">
@@ -58,15 +83,9 @@
 				<p class="deletedInfo">Cuando ingreses alguna especie de peces aparecerán en esta listado...</p>
 			<?php endif; ?>
 			<?php if(isset($listOfFishDeletes) && count($listOfFishDeletes)>1) : ?>
-					<a class="btn btn-link btnTD" href="<?=$base_url?>/deletes" role="button">Especies Eliminadas</a>
+					<a class="btn btn-info btnFishDeletes" href="<?=$base_url?>/deletes" role="button">Especies Eliminadas</a>
 			<?php endif; ?>
 	</section>
-	<footer>
-		<div class="foot">
-			<p>&copy; 2015 <a href="">Alejandro Córdoba Muñoz</a></p>
-			<p>Listado...</p>
-		</div>
-	</footer>
 	</div>
 </body>
 </html>

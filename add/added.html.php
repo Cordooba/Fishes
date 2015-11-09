@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Añadir...</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -109,12 +110,6 @@
 			</div>
 		</form>	
 	</section>
-	<hr>
-	<footer>
-		<div class="foot">
-			<p>&copy; 2015 <a href="">Alejandro Córdoba Muñoz</a></p>
-		</div>
-	</footer>
 </div>	
 </body>
 </html>

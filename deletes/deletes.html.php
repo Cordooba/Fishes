@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Consultar...</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 		<div class="container">
 	<header>
 		<h1><a class="btn btn-info back" href="<?=$base_url?>" role="button">Inicio <i class="glyphicon glyphicon-home"></i></a></h1>
-		<h2 class="logoName">Eliminar...</h1>
+		<h2 class="logoName">Actualizar...</h1>
 	</header>
 	<hr>
 	<section>
@@ -64,12 +65,6 @@
 				<p class="deletedInfo">Cuando ingreses alguna especie de peces aparecerán en esta lista...</p>
 			<?php endif; ?>
 	</section>
-	<footer>
-		<div class="foot">
-			<p>&copy; 2015 <a href="">Alejandro Córdoba Muñoz</a></p>
-			<p>Para volver a registrar...</p>
-		</div>
-	</footer>
 	</div>
 </body>
 </html>
