@@ -5,9 +5,22 @@
 
 	$listOfFishDeletes = [];
 
+	if ( isset($_GET['alphaFishD'])) {
+
+		$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY fish ASC';
+
+	}else if ( isset( $_GET['desalphaFishD']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY fish DESC';
+
+	}else {
+
+	$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY deletentry';
+
+	}
+
 	try {
 		
-		$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY deletentry';
 
 		$ps = $pdo->prepare($sql);
 

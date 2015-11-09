@@ -14,6 +14,30 @@
 		<h2 class="logoName">Actualizar...</h1>
 	</header>
 	<hr>
+	<?php if( !empty($listOfFishDeletes) && count($listOfFishDeletes)>1 ): ?>
+		<table>
+			<tbody>
+				<div class="btn-group" role="group" aria-label="order">
+				<tr>
+					<td>
+						<form action="?alphaFishD" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-primary btn1">
+								<span class="glyphicon glyphicon-sort-by-alphabet"></span>
+							</button>
+						</form>
+					</td>
+					<td>
+						<form action="?desalphaFishD" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-danger btn2">
+								<span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
+							</button>
+						</form>
+					</td>
+				</tr>
+				</div>
+			</tbody>
+		</table>
+	<?php endif; ?>
 	<section>
 			<?php if ( !empty($listOfFishDeletes) ) :?>
 				<table class="table table-striped">
