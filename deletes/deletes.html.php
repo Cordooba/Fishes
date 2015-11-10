@@ -33,6 +33,27 @@
 							</button>
 						</form>
 					</td>
+					<td>
+						<form action="?fishTypeSalada" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-warning btn3">
+								<span class="glyphicon glyphicon-plane"></span>
+							</button>
+						</form>
+					</td>
+					<td>
+						<form action="?fishTypeDulce" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-success btn4">
+								<span class="glyphicon glyphicon-sunglasses"></span>
+							</button>
+						</form>
+					</td>
+					<td>
+						<form action="?fishTypeFria" method="post" class="orderbutton">
+							<button type="submit" class="btn btn-active btn5">
+								<span class="glyphicon glyphicon-piggy-bank"></span>
+							</button>
+						</form>
+					</td>
 				</tr>
 				</div>
 			</tbody>

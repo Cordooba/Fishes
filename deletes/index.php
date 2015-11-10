@@ -13,9 +13,21 @@
 
 		$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY fish DESC';
 
+	}else if ( isset( $_GET['fishTypeSalada']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE type="Agua Salada" AND deletentry IS NOT NULL';
+
+	}else if ( isset( $_GET['fishTypeDulce']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE type="Agua Dulce" AND deletentry IS NOT NULL';
+
+	}else if ( isset( $_GET['fishTypeFria']) ) {
+
+		$sql = 'SELECT * FROM fishes WHERE type="Agua Fria" AND deletentry IS NOT NULL';
+
 	}else {
 
-	$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY deletentry';
+		$sql = 'SELECT * FROM fishes WHERE deletentry IS NOT NULL ORDER BY deletentry';
 
 	}
 
